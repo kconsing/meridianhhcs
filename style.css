@@ -596,6 +596,16 @@ body{
 	background-position: center;
 	background-repeat:no-repeat;
 }
+.slider .single-slider:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#fff;
+	opacity:0.1;
+}
 .slider .single-slider .text{
 	margin-top:120px;
 }
@@ -606,7 +616,7 @@ body{
 	color: #2C2D3F;
 	font-size: 38px;
 	font-weight: 700;
-	margin: 0;
+	margin: 260px 0 0 0;
 	padding: 0;
 	line-height: 42px;
 }
@@ -1468,7 +1478,6 @@ body{
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
