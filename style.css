@@ -255,7 +255,7 @@ body{
 	border-bottom:1px solid #eee;
 }
 .header .topbar{
-	padding:15px 0;
+	padding:7px 0;
 }
 .header .top-link{
 	float:left;
@@ -339,13 +339,14 @@ body{
 	position:relative;
 }
 .header .nav li a::before {
+	/* Karl: This will show styles when top nav element is selected and will add a bar on bottom */
 	position: absolute;
 	content: "";
 	left: 0;
 	bottom: 0;
 	height: 3px;
 	width:0%;
-	background: #4f3b72;
+	/* background: #4f3b72; */
 	border-radius: 5px 5px 0 0;
 	opacity:0;
 	visibility:hidden;
@@ -359,7 +360,7 @@ body{
 	width: 100%;
 }
 .header .nav li.active a{
-	color:#4f3b72;
+	color:purple;
 }
 .header .nav li:hover a:before{
 	opacity:1;
@@ -3384,7 +3385,12 @@ body{
 	transform:scale(1);
 }
 .contact-us .contact-info{
-	margin-top:50px;
+	/* margin-top:50px; */
+
+	/* Karl: Moved these mini cards to the home page on top of the hero slider */
+	position: relative;
+    transform: translateY(-50%);
+    z-index: 9;
 }
 .contact-us .single-info {
 	background: #4f3b72;
@@ -4052,7 +4058,7 @@ body{
 	font-size:20px;
 	font-weight:600;
 	text-transform:capitalize;
-	margin-bottom:40px;
+	margin-bottom:20px;
 	padding-bottom:20px;
 	text-transform:capitalize;
 	position:relative;
@@ -4224,3 +4230,11 @@ body{
 	  margin-bottom: 20px; /* Space below the heading */
 	  color: #2c3e50; /* A slightly muted dark color */
   }
+
+
+
+
+  /* Karl custom top nav styles */
+  ul.nav.menu {
+    justify-content: right;
+}

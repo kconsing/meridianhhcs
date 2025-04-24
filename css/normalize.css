@@ -15,6 +15,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	scroll-behavior: smooth;
 }
 html,body {
 	height: 100%;
@@ -651,6 +652,11 @@ img {
 	/* Make sure images are scaled correctly. */
 	max-width:58%;
 	/* Adhere to container width. */
+
+	/* karl custom */
+	/* height: auto;
+    max-width: 60%;
+    margin-top: 7px; */
 }
 
 figure {
