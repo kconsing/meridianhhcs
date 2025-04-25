@@ -4194,30 +4194,34 @@ body{
 .services-container {
 	display: flex; /* Enables Flexbox layout */
 	flex-wrap: wrap; /* Allows columns to stack on smaller screens */
-	gap: 20px; /* Space between the columns */
+	gap: 40px; /* Space between the columns */
 	padding: 15px; /* Optional: Adds some space around the container */
-	border: 1px solid #eee; /* Optional: Adds a light border for visual structure */
-	background-color: #f9f9f9; /* Optional: Light background color */
+	/* border: 1px solid #eee; Optional: Adds a light border for visual structure */
+	/* background-color: #f9f9f9; Optional: Light background color */
 	margin-bottom: 20px; /* Optional: Space below the list */
   }
   
   .services-column {
-	flex: 1; /* Allows columns to grow and shrink */
-	min-width: 200px; /* Minimum width before columns stack */
-  }
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    padding: 25px;
+}
   
   .services-column h3 { /* Optional: If you want headings per column */
 	  margin-top: 0;
 	  color: #333;
-	  border-bottom: 1px solid #ccc;
-	  padding-bottom: 5px;
+	  /* border-bottom: 1px solid #ccc; */
+	  padding-bottom: 24px;
+	  text-align: center;
   }
   
   .services-column ul {
-	list-style-type: disc; /* Or use 'none', 'square', etc. */
-	padding-left: 20px; /* Standard indentation for bullet points */
-	margin: 0; /* Removes default browser margins */
-  }
+    list-style-type: disc;
+    padding-left: 22px;
+    margin: 0;
+    color: #757575;
+}
   
   .services-column li {
 	margin-bottom: 10px; /* Space between list items */
@@ -4237,4 +4241,11 @@ body{
   /* Karl custom top nav styles */
   ul.nav.menu {
     justify-content: right;
+}
+
+/* Karl custom - Check mark in services style */
+i.fa.fa-check-circle {
+    color: #4f3b72;
+    padding-right: 5px;
+    font-size: 16px;
 }
