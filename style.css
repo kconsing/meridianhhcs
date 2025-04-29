@@ -255,7 +255,7 @@ body{
 	border-bottom:1px solid #eee;
 }
 .header .topbar{
-	padding:15px 0;
+	padding:7px 0;
 }
 .header .top-link{
 	float:left;
@@ -339,13 +339,14 @@ body{
 	position:relative;
 }
 .header .nav li a::before {
+	/* Karl: This will show styles when top nav element is selected and will add a bar on bottom */
 	position: absolute;
 	content: "";
 	left: 0;
 	bottom: 0;
 	height: 3px;
 	width:0%;
-	background: #4f3b72;
+	/* background: #4f3b72; */
 	border-radius: 5px 5px 0 0;
 	opacity:0;
 	visibility:hidden;
@@ -359,7 +360,7 @@ body{
 	width: 100%;
 }
 .header .nav li.active a{
-	color:#4f3b72;
+	color:purple;
 }
 .header .nav li:hover a:before{
 	opacity:1;
@@ -704,7 +705,7 @@ body{
 	background: #fff;
 	margin: 0;
 	padding: 0;
-	height: 230px;
+	height: 130px;
 }
 .schedule .schedule-inner {
 	position: relative;
@@ -3384,7 +3385,12 @@ body{
 	transform:scale(1);
 }
 .contact-us .contact-info{
-	margin-top:50px;
+	/* margin-top:50px; */
+
+	/* Karl: Moved these mini cards to the home page on top of the hero slider */
+	position: relative;
+    transform: translateY(-50%);
+    z-index: 9;
 }
 .contact-us .single-info {
 	background: #4f3b72;
@@ -4052,7 +4058,7 @@ body{
 	font-size:20px;
 	font-weight:600;
 	text-transform:capitalize;
-	margin-bottom:40px;
+	margin-bottom:20px;
 	padding-bottom:20px;
 	text-transform:capitalize;
 	position:relative;
@@ -4180,3 +4186,71 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+
+
+
+/* Basic Styling for the Two-Column Service List */
+.services-container {
+	display: flex; /* Enables Flexbox layout */
+	flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+	gap: 40px; /* Space between the columns */
+	padding: 15px; /* Optional: Adds some space around the container */
+	/* border: 1px solid #eee; Optional: Adds a light border for visual structure */
+	/* background-color: #f9f9f9; Optional: Light background color */
+	margin-bottom: 20px; /* Optional: Space below the list */
+  }
+  
+  .services-column {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    padding: 25px;
+}
+  
+  .services-column h3 { /* Optional: If you want headings per column */
+	  margin-top: 0;
+	  color: #333;
+	  /* border-bottom: 1px solid #ccc; */
+	  padding-bottom: 24px;
+	  text-align: center;
+  }
+  
+  .services-column ul {
+    list-style-type: disc;
+    padding-left: 22px;
+    margin: 0;
+    color: #757575;
+}
+  
+  .services-column li {
+	margin-bottom: 10px; /* Space between list items */
+	line-height: 1.4; /* Improves readability */
+  }
+  
+  /* Optional: Heading style */
+  .services-container h2 {
+	  text-align: center; /* Center the main heading */
+	  margin-bottom: 20px; /* Space below the heading */
+	  color: #2c3e50; /* A slightly muted dark color */
+  }
+
+
+
+
+  /* Karl custom top nav styles */
+  ul.nav.menu {
+    justify-content: right;
+}
+
+/* Karl custom - Check mark in services style */
+i.fa.fa-check-circle {
+    color: #4f3b72;
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+/* Gmaps */
+gmp-map {
+	height: 100%;
+  }
