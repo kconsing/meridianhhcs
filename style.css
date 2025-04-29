@@ -4249,3 +4249,8 @@ i.fa.fa-check-circle {
     padding-right: 5px;
     font-size: 16px;
 }
+
+/* Gmaps */
+gmp-map {
+	height: 100%;
+  }

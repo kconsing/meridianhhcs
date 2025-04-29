@@ -130,7 +130,7 @@
                           <li><a href="index.html">Home Page 1</a></li>
                         </ul> -->
                       </li>
-                      <li><a href="#">Services </a></li>
+                      <li><a href="#services">Services </a></li>
                       <!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="404.html">404 Error</a></li>
@@ -252,22 +252,22 @@
 					<div class="row">
 						<!-- single-info -->
 						<div class="col-lg-4 col-12 ">
-							<div class="single-info">
+							<div id="hero-phone" class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
-									<h3>+(000) 1234 56789</h3>
-									<p>info@company.com</p>
+									<h3>(847)543-0045</h3>
+									<p>info@meridianhhcs.com</p>
 								</div>
 							</div>
 						</div>
 						<!--/End single-info -->
 						<!-- single-info -->
 						<div class="col-lg-4 col-12 ">
-							<div class="single-info">
+							<div id="hero-map-button" class="single-info" style="cursor: pointer;">
 								<i class="icofont-google-map"></i>
 								<div class="content">
-									<h3>2 Fir e Brigade Road</h3>
-									<p>Chittagonj, Lakshmipur</p>
+									<h3>4 N Deerpoint Dr, Ste 1008 </h3>
+									<p>Hainesville, IL 60030</p>
 								</div>
 							</div>
 						</div>
@@ -277,7 +277,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
-									<h3>Mon - Sat: 8am - 5pm</h3>
+									<h3>Mon-Fri: 9AM - 5PM</h3>
+									<p>Saturday Closed</p>
 									<p>Sunday Closed</p>
 								</div>
 							</div>
@@ -1144,7 +1145,7 @@
 								<h2>About Us</h2>
 								<p>We understand that home health plays a vital and intimate role in the ever changing healthcare delivery system in today’s culture and for future generations to come. We honor this privilege of serving the community and hold ourselves to the highest standards to deliver value that our patients and healthcare providers can trust.</p>
 								<!-- Social -->
-								<ul class="social">
+								<ul class="social" style="display: none">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
 									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
 									<li><a href="#"><i class="icofont-twitter"></i></a></li>
@@ -1177,9 +1178,9 @@
 								<h2>Open Hours</h2>
 								<!-- <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p> -->
 								<ul class="time-sidual">
-									<li class="day">Monday - Friday <span>8.00-20.00</span></li>
-									<li class="day">Saturday <span>9.00-18.30</span></li>
-									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+									<li class="day">Monday - Friday <span>9:00AM - 5:00PM</span></li>
+									<li class="day">Saturday <span>Closed</span></li>
+									<li class="day">Monday - Thusday <span>Closed</span></li>
 								</ul>
 							</div>
 						</div>
@@ -1254,6 +1255,37 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script>
+      // Paste the JavaScript code here or link to your external .js file
+      document.addEventListener('DOMContentLoaded', function() {
+        const callDiv = document.getElementById('hero-phone');
     
+        if (callDiv) {
+          callDiv.addEventListener('click', function() {
+            const phoneNumber = '++8475430045';
+            window.location.href = `tel:${phoneNumber}`;
+          });
+    
+          callDiv.style.cursor = 'pointer';
+        } else {
+          console.error('Div with ID "hero-phone" not found.');
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById('hero-map-button');
+    
+        if (button) {
+          button.addEventListener('click', function() {
+            const businessName = 'Meridian Health Care - Home Health - Palliative & Hospice'; // Replace with the desired business name
+            const mapUrl = `https://www.google.com/maps?q=${businessName}`;
+            window.open(mapUrl, '_blank'); // Opens the URL in a new tab
+          });
+        } else {
+          console.error('Button with ID "hero-map-button" not found.');
+        }
+      });
+    </script>
   </body>
 </html>
