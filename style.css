@@ -594,8 +594,10 @@ body{
 .slider .single-slider {
 	height: 600px;
 	background-size: cover;
-	background-position: center;
+	/* background-position: center; */
+	background-position: 0px -25px;
 	background-repeat:no-repeat;
+	/* filter: brightness(0.9); */
 }
 .slider .single-slider:before{
 	position:absolute;
@@ -614,12 +616,12 @@ body{
 	margin-top:150px;
 }
 .slider .single-slider h1 {
-	color: #2C2D3F;
-	font-size: 38px;
+	color: #dcb2e4;
+	font-size: 72px;
 	font-weight: 700;
-	margin: 260px 0 0 0;
+	margin: 200px 0 0 0;
 	padding: 0;
-	line-height: 42px;
+	/* line-height: 42px; */
 }
 .slider .single-slider h1 span{
 	color:#4f3b72;
