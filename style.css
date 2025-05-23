@@ -614,12 +614,12 @@ body{
 	margin-top:150px;
 }
 .slider .single-slider h1 {
-	color: #2C2D3F;
-	font-size: 38px;
-	font-weight: 700;
-	margin: 260px 0 0 0;
-	padding: 0;
-	line-height: 42px;
+    color: #2c2539;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 290px 0 0 0;
+    padding: 0;
+    line-height: 59px;
 }
 .slider .single-slider h1 span{
 	color:#4f3b72;
@@ -1081,16 +1081,18 @@ body{
 /*===============================
 	Start Call to action CSS
 =================================*/
-.call-action{
-	background-image:url('img/call-bg.jpg');
-	background-size:cover;
-	background-position:center;
-	position:relative;
-	background-repeat:no-repeat;
+.call-action {
+    background-image: url(img/team-photo-2.jpg);
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    background-position: 0px -43.167px;
+	margin-top: 50px;
 }
 .call-action .content{
 	text-align:center;
-	padding:100px 265px;
+	padding:185px 265px;
 }
 .call-action .content h2{
 	color:#fff;
@@ -1729,11 +1731,12 @@ body{
 	background-image:url('img/client-bg.jpg');
 	background-size:cover;
 	background-position:center;
-	padding:100px 0px;
+	padding: 100px 0px 135px 0px;
 	position:relative;
 }
 .clients .single-clients{
-	
+	color: white;
+	text-align: center;	
 }
 .clients .single-clients img {
 	width: 100%;
@@ -3986,6 +3989,7 @@ body{
 	padding:100px 0px;
 	position:relative;
 	background:#4f3b72;
+	margin-top: 100px;
 }
 .footer .footer-top:before{
 	position:absolute;
