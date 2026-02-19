@@ -1088,7 +1088,6 @@ body{
 	background-repeat: no-repeat;
 	margin-top: 0px;
 	height: 700px;
-	background-position: 0 -42px;
 	min-height: 480px; /* flexible height that scales */
 	display: flex;
 	align-items: center;
