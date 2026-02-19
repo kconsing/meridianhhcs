@@ -1082,17 +1082,21 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action {
-    background-image: url(img/team-photo-2.jpg);
-    background-size: cover;
-    background-position: center;
-    /* position: relative; */
-    background-repeat: no-repeat;
-    background-position: 0px -43.167px;
-	margin-top: 50px;
+	background-image: url(img/team-photo-3-cropped.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	height: 700px;
+	background-position: 0 -42px;
+	min-height: 480px; /* flexible height that scales */
+	display: flex;
+	align-items: center;
 }
 .call-action .content{
 	text-align:center;
-	padding:185px 265px;
+	padding: 40px 20px; /* reduced padding for responsiveness */
+	width: 100%;
 }
 .call-action .content h2{
 	color:#fff;
@@ -1102,7 +1106,7 @@ body{
 }
 .call-action .content p {
 	color: #fff;
-	margin: 30px 0px;
+	margin: 20px 0px;
 	font-size: 15px;
 }
 .call-action .content .btn{
@@ -1139,8 +1143,21 @@ body{
 .call-action .content .second i{
 	margin-left:10px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .call-action { min-height: 360px; background-position: center top; }
+  .call-action .content h2 { font-size: 28px; line-height: 34px; }
+}
+@media (max-width: 575px) {
+  .call-action { min-height: 220px; }
+  .call-action .content{ padding: 20px 12px; }
+  .call-action .content h2 { font-size: 20px; line-height: 28px; }
+  .call-action .content p { font-size: 14px; margin: 12px 0; }
+  .call-action .content .btn{ margin-right:10px; padding: 8px 12px; }
+}
 /*===============================
-	Start Call to action CSS
+	End Call to action CSS
 =================================*/
 
 /*==========================
@@ -1434,6 +1451,9 @@ body{
 }
 .testimonials .section-title h2{
 	color:#fff;
+}
+.services .section-title .button{
+	margin-top:30px;
 }
 .testimonials .single-testimonial {
 	text-align: left;
