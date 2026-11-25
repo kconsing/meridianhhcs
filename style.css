@@ -1764,6 +1764,25 @@ body{
 	float: none;
 	padding: 0 35px;
 }
+.clients .insurance-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.clients .insurance-list li{
+	color: white;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+.clients .insurance-subtitle{
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	font-style: italic;
+	margin: 30px 0 15px;
+}
 /*========================
 	End Clients CSS
 ==========================*/
